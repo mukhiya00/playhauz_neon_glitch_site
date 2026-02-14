@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PLAYHAUZ – Neon Glitch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="bg">
+    <div class="bg__grid"></div>
+    <div class="bg__scanlines"></div>
+    <div class="bg__glow"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Playhauz Home">
+      <span class="glitch" data-text="PLAYHAUZ">PLAYHAUZ</span>
+    </a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Our Services</a>
+      <a href="#booking">Booking</a>
+      <a href="#addons">Add-ons</a>
+      <a href="#terms">Terms</a>
+      <a class="btn" href="#booking">Book Now</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="section__bg" style="background-image:url('assets/page_1.png')"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <h1>India’s Best Memories Experience<br/>Theatre Venue for Celebrations</h1>
+          <p>Neon vibe + glitch energy. Book your perfect celebration: birthdays, anniversaries, date nights & more.</p>
+
+          <div class="glass form">
+            <div class="form__row">
+              <label>City</label>
+              <select>
+                <option>Delhi NCR</option>
+                <option>Noida</option>
+                <option>Gurugram</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <label>Location</label>
+              <select>
+                <option>Choose a location</option>
+                <option>Sector 18</option>
+                <option>Cyber Hub</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <label>Date</label>
+              <input type="date"/>
+            </div>
+            <button class="btn btn--full">Book Now</button>
+            <div class="tiny">
+              <span class="pill">⭐ 153,754 bookings completed</span>
+              <span class="muted">132 people searching right now</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__showcase">
+          <div class="card neon">
+            <div class="card__title">Live Preview</div>
+            <div class="card__body">
+              <div class="marquee">
+                <div class="marquee__track">
+                  <img src="assets/page_2.png" alt="Section preview 1"/>
+                  <img src="assets/page_3.png" alt="Section preview 2"/>
+                  <img src="assets/page_4.png" alt="Section preview 3"/>
+                  <img src="assets/page_5.png" alt="Section preview 4"/>
+                  <img src="assets/page_2.png" alt="Section preview 1 duplicate"/>
+                  <img src="assets/page_3.png" alt="Section preview 2 duplicate"/>
+                  <img src="assets/page_4.png" alt="Section preview 3 duplicate"/>
+                  <img src="assets/page_5.png" alt="Section preview 4 duplicate"/>
+                </div>
+              </div>
+              <p class="muted">Images auto-scroll inside the box (marquee effect).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (Celebration / Gaming / Entertainment) -->
+    <section id="services" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_2.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Our Services</h2>
+          <p>Celebration, Gaming Zone, Entertainment — all with neon-glass UI.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card neon">
+            <div class="card__title">Celebration</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_2.png" alt="Celebration"/>
+              </div>
+              <div class="row">
+                <span class="price">₹ 1,949</span>
+                <span class="muted">for up to 4 people</span>
+              </div>
+              <button class="btn btn--ghost" data-scroll="#booking">Select Slot</button>
+            </div>
+          </article>
+
+          <article class="card neon">
+            <div class="card__title">Gaming Zone</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_2.png" alt="Gaming Zone"/>
+              </div>
+              <ul class="list">
+                <li>Multiplayer games</li>
+                <li>VR experiences & racing simulators</li>
+                <li>Food order while gaming</li>
+              </ul>
+              <button class="btn btn--ghost" data-scroll="#booking">Select Time Slot</button>
+            </div>
+          </article>
+
+          <article class="card neon">
+            <div class="card__title">Entertainment</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_2.png" alt="Entertainment"/>
+              </div>
+              <div class="chips">
+                <span class="chip">Standup Comedy</span>
+                <span class="chip">Sports</span>
+                <span class="chip">Concerts</span>
+              </div>
+              <button class="btn btn--ghost" data-scroll="#booking">Select Time Slot</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="wide">
+          <div class="wide__left">
+            <h3>Where every moment becomes a memory</h3>
+            <p class="muted">This section is based on your PDF layout. You can replace any image later inside <code>/assets</code>.</p>
+          </div>
+          <div class="wide__right card neon">
+            <div class="card__body">
+              <div class="marquee marquee--thin">
+                <div class="marquee__track">
+                  <img src="assets/page_6.png" alt="Add-ons preview"/>
+                  <img src="assets/page_7.png" alt="Terms preview"/>
+                  <img src="assets/page_4.png" alt="Occasion preview"/>
+                  <img src="assets/page_6.png" alt="Add-ons preview duplicate"/>
+                  <img src="assets/page_7.png" alt="Terms preview duplicate"/>
+                  <img src="assets/page_4.png" alt="Occasion preview duplicate"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_3.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Booking Flow</h2>
+          <p>Basic details → Add-ons → Payment (dummy UI, you can connect backend later).</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card neon">
+            <div class="card__title">Booking Details</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_3.png" alt="Booking details"/>
+              </div>
+              <div class="form2">
+                <div class="form__row">
+                  <label>Booking name</label>
+                  <input placeholder="Enter your name"/>
+                </div>
+                <div class="form__row">
+                  <label>WhatsApp number</label>
+                  <input placeholder="Enter your WhatsApp number"/>
+                </div>
+                <div class="row">
+                  <span class="pill">Adults: 2</span>
+                  <span class="pill">Kids: 0</span>
+                </div>
+                <button class="btn" data-scroll="#occasion">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card neon">
+            <div class="card__title">Summary</div>
+            <div class="card__body">
+              <div class="summary">
+                <div class="summary__row"><span>Theater (3 ppl)</span><b>₹ 2299</b></div>
+                <div class="summary__row"><span>Decoration</span><b>₹ 750</b></div>
+                <div class="summary__row"><span class="muted">Subtotal</span><b>₹ 3049</b></div>
+                <div class="summary__row"><span class="muted">Advance payable</span><b>₹ 750</b></div>
+                <div class="summary__row"><span class="muted">Balance amount</span><b>₹ 2299</b></div>
+              </div>
+              <button class="btn btn--full">Book Now</button>
+              <p class="muted tiny">Payment buttons are dummy right now.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- OCCASION -->
+    <section id="occasion" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_4.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Select the Occasion</h2>
+          <p>Same grid vibe as your PDF layout.</p>
+        </div>
+
+        <div class="card neon">
+          <div class="card__body">
+            <div class="imgframe">
+              <img src="assets/page_4.png" alt="Occasion grid"/>
+            </div>
+
+            <div class="occ-grid">
+              <button class="occ">Birthday</button>
+              <button class="occ">Anniversary</button>
+              <button class="occ">Romantic Date</button>
+              <button class="occ">Marriage Proposal</button>
+              <button class="occ">Bride to be</button>
+              <button class="occ">Farewell</button>
+              <button class="occ">Congratulations</button>
+              <button class="occ">Baby Shower</button>
+              <button class="occ">Get Together</button>
+              <button class="occ">Kitty Party</button>
+              <button class="occ">Groom to be</button>
+              <button class="occ">I am Sorry</button>
+            </div>
+
+            <div class="row">
+              <input class="input" placeholder="Nick name or birthday person"/>
+              <button class="btn" data-scroll="#cake">Next</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAKE -->
+    <section id="cake" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_5.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Choose Cake</h2>
+          <p>Optional add-on (UI only). Prices can be edited later.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card neon">
+            <div class="card__title">Standard</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_5.png" alt="Standard cakes"/>
+              </div>
+              <div class="mini-grid">
+                <label class="check"><input type="checkbox"/> Fudge Cake</label>
+                <label class="check"><input type="checkbox"/> Chocolate Cake</label>
+                <label class="check"><input type="checkbox"/> Ferrero Rocher</label>
+                <label class="check"><input type="checkbox"/> Butterscotch</label>
+                <label class="check"><input type="checkbox"/> Pineapple</label>
+                <label class="check"><input type="checkbox"/> Red Heart</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card neon neon--gold">
+            <div class="card__title">Premium</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_5.png" alt="Premium cakes"/>
+              </div>
+              <button class="btn btn--full" data-scroll="#addons">Next step</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADDONS -->
+    <section id="addons" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_6.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Choose Add-ons</h2>
+          <p>Extra decoration, gifts, special services (UI only).</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card neon">
+            <div class="card__title">Options</div>
+            <div class="card__body">
+              <div class="imgframe">
+                <img src="assets/page_6.png" alt="Add-ons"/>
+              </div>
+
+              <div class="addons-grid">
+                <label class="addon"><input type="checkbox"/><span>Rose Heart Balloon</span><b>₹150</b></label>
+                <label class="addon"><input type="checkbox"/><span>Candle Path</span><b>₹300</b></label>
+                <label class="addon"><input type="checkbox"/><span>LED Numbers</span><b>₹100</b></label>
+
+                <label class="addon"><input type="checkbox"/><span>Small Heart Pillow</span><b>₹200</b></label>
+                <label class="addon"><input type="checkbox"/><span>Event Sash</span><b>₹100</b></label>
+                <label class="addon"><input type="checkbox"/><span>Crown</span><b>₹150</b></label>
+
+                <label class="addon"><input type="checkbox"/><span>Bouquet (10 roses)</span><b>₹350</b></label>
+                <label class="addon"><input type="checkbox"/><span>Luxe Bouquet</span><b>₹499</b></label>
+                <label class="addon"><input type="checkbox"/><span>Sparkle Candle</span><b>₹30</b></label>
+
+                <label class="addon"><input type="checkbox"/><span>Photoshoot (15 min)</span><b>₹300</b></label>
+                <label class="addon"><input type="checkbox"/><span>Photoshoot (30 min)</span><b>₹700</b></label>
+                <label class="addon"><input type="checkbox"/><span>Fog Entry (3 pots)</span><b>₹990</b></label>
+              </div>
+
+              <button class="btn btn--full" data-scroll="#terms">Next step</button>
+            </div>
+          </div>
+
+          <aside class="card neon">
+            <div class="card__title">Total</div>
+            <div class="card__body">
+              <div class="summary" id="totalBox">
+                <div class="summary__row"><span>Selected add-ons</span><b id="addonCount">0</b></div>
+                <div class="summary__row"><span class="muted">Estimated total</span><b id="estimatedTotal">₹ 3049</b></div>
+              </div>
+              <p class="muted tiny">This total is a simple demo calculation on selected checkboxes.</p>
+              <button class="btn btn--full">Proceed to Payment</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMS -->
+    <section id="terms" class="section">
+      <div class="section__bg" style="background-image:url('assets/page_7.png')"></div>
+      <div class="container">
+        <div class="section__head">
+          <h2>Terms & Conditions</h2>
+          <p>Same page vibe with neon-glass card.</p>
+        </div>
+
+        <div class="card neon">
+          <div class="card__body">
+            <div class="imgframe">
+              <img src="assets/page_7.png" alt="Terms"/>
+            </div>
+
+            <div class="terms">
+              <ol>
+                <li>No movie/OTT accounts are provided; setup uses your accounts/content.</li>
+                <li>Smoking/Drinking is not allowed inside the theater.</li>
+                <li>Any damage to theater/decor will be reimbursed.</li>
+                <li>Maintain cleanliness in the theater.</li>
+                <li>Party poppers/snow sprays/cold fire are prohibited.</li>
+                <li>Aadhaar card is mandatory for entry.</li>
+                <li>Couples under 18 are not allowed to book.</li>
+                <li>Pets are not allowed inside.</li>
+              </ol>
+              <label class="agree"><input type="checkbox" id="agree"/> I agree to the above terms</label>
+              <button class="btn btn--full" id="finalBtn" disabled>Next step</button>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="muted">© PLAYHAUZ – Neon Glitch UI (static demo)</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
